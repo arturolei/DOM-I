@@ -44,3 +44,24 @@ You have been provided a [JSON object](js/index.js) with all the necessary data 
 
 ## Stretch Project: Digital Timer
 This project is heavier on logic but employs some DOM manipulation to achieve it's goals.  Go check it out here: [stretch assignment](stretch-assignment) and see how far you can get. 
+
+
+# Reflections, Standup Report Responses I, April 10, 2019:
+
+## Pull Request Link
+https://github.com/arturolei/DOM-I/pull/1
+
+## What did you work on today and yesterday?
+I worked on reviewing the DOM-I related training material and finishing the MVP for the DOM-I project. 
+
+## What Will You Work On Tomorrow or Need to Get Done
+I need to review the TK materials for tomorrow. I am going to look into other solutions of how people solved things. 
+
+## Blockers/Breakthroughs
+
+### Blockers 
+I am having some difficulty mastering all the properties of and understanding the distinctions between NodeLists and HTML collections, especially with regard to what methods like .getElementById will return versus .querySelector. 
+I might have used .children too much.
+
+### Breakthroughs:
+I am beginning to get the limitations of NodeLists and HTMLCollections with respect to what methods and properties are available to each. 

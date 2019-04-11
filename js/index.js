@@ -108,19 +108,24 @@ contactSection[3].textContent = siteContent["contact"]["email"];
 let footerParagraph = document.querySelector("footer p");
 footerParagraph.textContent = siteContent["footer"]["copyright"];
 
+//Stretch Goal:
+
 
 //Task 3: Add New Content
 let navSection = document.querySelector('nav');
 
 
+//Task 3: Here is where I add two new items to the nav section.
 let newNavOption1 = document.createElement("a");
 newNavOption1.textContent = "Contact Us"
 
 let newNavOption2 = document.createElement("a");
 newNavOption2.textContent = "Bribes"
 
-
+//Example of appendChild
 navSection.appendChild(newNavOption1);
+
+//example of prependChild (should be first in that top row)
 navSection.prepend(newNavOption2);
 
 //Needed to run this loop here to make sure all nav text turned green. 
