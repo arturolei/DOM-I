@@ -61,9 +61,10 @@ navLinks[5].textContent = siteContent["nav"]["nav-item-6"];
 
 //cta-text Section
 let ctaText = document.querySelector(".cta-text");
-console.log(ctaText);
+//console.log(ctaText);
+
 let ctaTextH1 = document.querySelector(".cta-text h1");
-ctaTextH1.textContent = siteContent["cta"]["h1"];
+ctaTextH1.innerHTML = 'DOM<br>is<br>awesome';
 
 let ctaTextBtn = document.querySelector(".cta-text button");
 ctaTextBtn.textContent =siteContent["cta"]["button"];
@@ -90,7 +91,6 @@ bottomTextContent[0].children[1].textContent = siteContent["main-content"]["serv
 bottomTextContent[1].children[0].textContent = siteContent["main-content"]["product-h4"];
 bottomTextContent[1].children[1].textContent = siteContent["main-content"]["product-content"];
 
-
 bottomTextContent[2].children[0].textContent = siteContent["main-content"]["vision-h4"];
 bottomTextContent[2].children[1].textContent = siteContent["main-content"]["vision-content"];
 
@@ -109,9 +109,9 @@ let footerParagraph = document.querySelector("footer p");
 footerParagraph.textContent = siteContent["footer"]["copyright"];
 
 
-//Task 3: Add new content
+//Task 3: Add New Content
 let navSection = document.querySelector('nav');
-navSection.setAttribute("color","green");
+
 
 let newNavOption1 = document.createElement("a");
 newNavOption1.textContent = "Contact Us"
@@ -119,5 +119,12 @@ newNavOption1.textContent = "Contact Us"
 let newNavOption2 = document.createElement("a");
 newNavOption2.textContent = "Bribes"
 
+
 navSection.appendChild(newNavOption1);
 navSection.prepend(newNavOption2);
+
+//Needed to run this loop here to make sure all nav text turned green. 
+for (let i=0; i < navSection.children.length; i++){
+  navSection.children[i].style.color = "green";
+}
+
